@@ -74,7 +74,7 @@ export default function Noticia() {
 
     return (
         <>
-            <form onSubmit={postNoticias}>
+            <form onSubmit={postNoticias} className="form">
                 <label htmlFor="titulo">Escreva o Titulo</label>
                 <input type="text" name="titulo" id="titulo" required onChange={handleNovaNoticia} value={novaNoticia?.titulo} />
 
@@ -88,8 +88,8 @@ export default function Noticia() {
                 <ul>
                     {noticias.map((item, key) => (
                         <li key={key}>
-                            Titulo: {item.titulo}
-                            Descrição: {item.descricao}
+                            Titulo: &nbsp;{item.titulo} <br />
+                            Descrição: &nbsp;{item.descricao} <br />
 
                             <input type="button" value="excluir" onClick={() => deletarNoticia(item.id)} />
                             <input type="button" value="editar" onClick={() => setNovaNoticia(item)} />
