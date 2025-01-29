@@ -1,16 +1,6 @@
 {
   "noticia": [
     {
-      "titulo": "Primeiro",
-      "descricao": "Descrição primeira",
-      "id": "5ba9"
-    },
-    {
-      "id": "4c03",
-      "titulo": "TEste ",
-      "descricao": "teste 12"
-    },
-    {
       "id": "7d3a",
       "titulo": "Titulo",
       "descricao": "TEste"
